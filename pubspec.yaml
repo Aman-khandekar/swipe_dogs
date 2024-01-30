@@ -1,0 +1,54 @@
+name: practice_project_flutter
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^0.13.3
+  get: ^4.6.5
+  lottie:
+  flutter_native_splash:
+  sizer: ^2.0.15
+  connectivity_plus: ^5.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/generated/
+  filename: assets.dart
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/animations/
+  fonts:
+    - family: GoogleSansTextRegular
+      fonts:
+        - asset: fonts/GoogleSansText-Regular.ttf
+    - family: GoogleSansTextMedium
+      fonts:
+        - asset: fonts/GoogleSansText-Medium.ttf
+    - family: GoogleSansTextBold
+      fonts:
+        - asset: fonts/GoogleSansText-Bold.ttf
+
+flutter_native_splash:
+  color: "#24142c"
+  image: "assets/images/puppy.jpg"
